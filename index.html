@@ -7,32 +7,91 @@
     <title>Css</title>
 
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
       * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
       }
-      .bx>h1{
-        color: red;
+
+      .flex-box {
+        max-width: 700px;
+        height: 500px;
+        border: 1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+
       }
-      
+
+      .item {
+        
+      }
+
+      .item1 {
+        background-color: red;
+        order: 6;
+
+      }
+
+      .item2 {
+        background-color: green;
+        order: 5;
+      }
+
+      .item3 {
+        background-color: blueviolet;
+        order: 4;
+      }
+
+      .item4 {
+        background-color: yellow;
+        order: 3;
+      }
+
+      .item5 {
+        background-color: violet;
+        order: 2;
+      }
+
+      .item6 {
+        background-color: teal;
+        order: 1;
+      }
     </style>
 
-    <!-- <link rel="stylesheet" href="index.css"> -->
+
 
   </head>
 
   <body>
 
+    <div class="flex-box">
 
-    <div class="bx">
-      <h1 class="one">hello jee</h1>
-      <h1 class="two">sello jee</h1>
-
-      <div class="c-bx">
-        <h1>Im child Box</h1>
+      <div class="item item1">
+        <h2>Box1</h2>
+      </div>
+      <div class="item item2">
+        <h2>Box2</h2>
+      </div>
+      <div class="item item3">
+        <h2>Box3</h2>
+      </div>
+      <div class="item item4">
+        <h2>Box4</h2>
+      </div>
+      <div class="item item5">
+        <h2>Box5</h2>
+      </div>
+      <div class="item item6">
+        <h2>Box6</h2>
       </div>
 
+
     </div>
+
+
 
 
 
