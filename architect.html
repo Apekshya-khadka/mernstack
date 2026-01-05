@@ -74,7 +74,7 @@
 
       .houses {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 20px;
       }
 
@@ -93,6 +93,23 @@
         color: white;
         padding: 5px 10px;
       }
+
+      /* this is used when we inspect and make the size small and big then  */
+         @media(max-width: 600px) {
+        body {
+          background-color: red;
+        }
+      }
+
+      @media(max-width: 450px) {
+       header{
+        flex-direction: column;
+        gap: 10px;
+       }
+      }
+
+      
+
       .full{
         display: flex;
         justify-content: space-between;
